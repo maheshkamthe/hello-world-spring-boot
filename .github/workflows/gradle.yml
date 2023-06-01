@@ -9,11 +9,11 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "feature-branch-1" ]
+    branches: [ "feature-branch-1", "master" ]
   pull_request:
     types:
       - closed
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 permissions:
   contents: read
