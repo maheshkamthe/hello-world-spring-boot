@@ -40,7 +40,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: mk-docker-priv-repo/mk-java-app
-        registry: docker.io
+        registry: docker.io/maheshkamthe
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
