@@ -9,7 +9,7 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "feature-branch-1", "master" ]
+    branches: [ "feature-branch-1" ]
   pull_request:
     types:
       - closed
@@ -40,6 +40,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: maheshkamthe/mk-docker-priv-repo
+        tags: v1, latest
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
